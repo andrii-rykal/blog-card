@@ -33,7 +33,13 @@ img {
   max-width: 100%;
   display: block;
 }
+button {
+  border: none;
+  background: none;
+  font-family: var(--font-family);
+}
 p,
+button,
 h1,
 h2 {
   margin: 0;
@@ -60,6 +66,12 @@ h2 {
 }
 .card-img {
   border-radius: 10px;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/illustration-article.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .card-content {
   display: flex;
