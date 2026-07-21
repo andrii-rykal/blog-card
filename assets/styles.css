@@ -1,0 +1,138 @@
+.attribution {
+  font-size: 0.6875rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  weight: 100 900;
+}
+@font-face {
+  font-family: 'Figtree Italic';
+  src: url('./fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+  weight: 100 900;
+}
+:root {
+  --color-gray-950: #111;
+  --color-white: #fff;
+  --color-yellow: #f4d04e;
+  --color-gray-500: #6b6b6b;
+
+  --font-family: 'Figtree', sans-serif;
+  --font-family-italic: 'Figtree Italic', sans-serif;
+}
+body {
+  background-color: var(--color-yellow);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  min-height: 100vh;
+  color: var(--color-gray-950);
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.cards-container {
+  height: 95vh;
+
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  padding: 24px;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid var(--color-gray-950);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 #000;
+  max-width: 385px;
+}
+.card-img {
+  border-radius: 10px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn {
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 4px 12px;
+  max-width: 73px;
+  background: var(--color-yellow);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-date {
+  font-weight: 500;
+  font-size: 12px;
+}
+.card-title {
+  font-weight: 800;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+.card-title:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+.card-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-gray-500);
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar {
+  width: 32px;
+}
+.avatar-name {
+  font-weight: 800;
+  font-size: 14px;
+}
+@media (min-width: 450px) {
+  .btn {
+    font-size: 14px;
+    max-width: 82px;
+  }
+  .card-date {
+    font-size: 14px;
+  }
+  .card-title {
+    font-size: 24px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+}
